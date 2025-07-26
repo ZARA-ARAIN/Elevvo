@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collapsible Sidebar</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/images.jpg" type="image/jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+      <div class="logo">
+        <img src="assets/images.jpg" alt="Logo">
+        <span class="logo-text">LOGO</span>
+      </div>
+      <ul class="nav-links">
+        <li class="active">
+          <i class="fas fa-home"></i>
+          <span>Home</span>
+          <span class="tooltip">Home</span>
+        </li>
+        <li>
+          <i class="fas fa-user"></i>
+          <span>Profile</span>
+          <span class="tooltip">Profile</span>
+        </li>
+        <li>
+          <i class="fas fa-envelope"></i>
+          <span>Messages</span>
+          <span class="tooltip">Messages</span>
+          <span class="badge">5</span>
+        </li>
+        <li>
+          <i class="fas fa-cog"></i>
+          <span>Settings</span>
+          <span class="tooltip">Settings</span>
+        </li>
+        <li class="logout">
+          <i class="fas fa-sign-out-alt"></i>
+          <span>Logout</span>
+          <span class="tooltip">Logout</span>
+        </li>
+      </ul>
+      <div class="theme-switch">
+        <i class="fas fa-moon"></i>
+        <span>Dark Mode</span>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <button id="toggleBtn" class="toggle-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="content-wrapper">
+        <h1>Welcome to Zara's Dashboard!</h1>
+        <p>This is your main content area. Zara's first task at Elevvo Pathways of Collapsible Sidebar .</p>
+        <div class="card-container">
+          <div class="card">
+            <i class="fas fa-chart-line"></i>
+            <h3>Analytics</h3>
+            <p>View your performance metrics</p>
+          </div>
+          <div class="card">
+            <i class="fas fa-users"></i>
+            <h3>Users</h3>
+            <p>Manage your team members</p>
+          </div>
+          <div class="card">
+            <i class="fas fa-tasks"></i>
+            <h3>Tasks</h3>
+            <p>Track your progress</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
